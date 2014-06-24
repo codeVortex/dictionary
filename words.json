@@ -1,0 +1,864 @@
+[
+{
+    "sp": "peruse",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "read thoroughly or carefully"
+        },
+        {
+            "lang": "en",
+            "body": "examine in detail"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "wont",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "used to"
+        },
+        {
+            "lang": "en",
+            "body": "in the habit of"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "practice",
+            "lang": "en"
+        },
+        {
+            "sp": "habit",
+            "lang": "en"
+        },
+        {
+            "sp": "συνήθεια",
+            "lang": "gr"
+        },
+        {
+            "sp": "likely",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "ante",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "gr",
+            "body": "ποσό στοιχήματος"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "ρίσκο",
+            "lang": "gr"
+        },
+        {
+            "sp": "bet",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "disconcerting",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "disturbing",
+            "lang": "en"
+        },
+        {
+            "sp": "ανησυχητικός",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "forsworn",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "violator of one's oath"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "επίορκος",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "perturb",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "gr",
+            "body": "διαταράσσω"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "unsettle",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "renegade",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "αποστάτης",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "paragon",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "υπόδειγμα",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "subsume",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "include",
+            "lang": "en"
+        },
+        {
+            "sp": "comprise",
+            "lang": "en"
+        },
+        {
+            "sp": "υπάγω",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "consignment",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "gr",
+            "body": "αποστολή αγαθών"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "φορτωτική",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "vagrant",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "homeless person"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "wanderer",
+            "lang": "en"
+        },
+        {
+            "sp": "περιπλανώμενος",
+            "lang": "gr"
+        },
+        {
+            "sp": "άστεγος",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "skulk",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "move stealthily"
+        },
+        {
+            "lang": "en",
+            "body": "lurk in the dark usually for evil deeds"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "παραμονεύω",
+            "lang": "gr"
+        },
+        {
+            "sp": "lurk",
+            "lang": "en"
+        },
+        {
+            "sp": "καραδοκώ",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "prefab",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "abbreviated form of \"prefabricated\""
+        },
+        {
+            "lang": "gr",
+            "body": "προκατασκευασμένο σπίτι"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "προκάτ",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "foundry",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "χυτήριο",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "run-down",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "weary",
+            "lang": "en"
+        },
+        {
+            "sp": "exhausted",
+            "lang": "en"
+        },
+        {
+            "sp": "deteriorated",
+            "lang": "en"
+        },
+        {
+            "sp": "dilapidated",
+            "lang": "en"
+        },
+        {
+            "sp": "ερειπωμένος",
+            "lang": "gr"
+        },
+        {
+            "sp": "ρημαγμένος",
+            "lang": "gr"
+        },
+        {
+            "sp": "κουρασμένος",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "shakedown",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "extortion as by blackmail or threats of violence"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "sapient",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "wise and with sound judgement"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "conjecture",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "form suppositions"
+        },
+        {
+            "lang": "gr",
+            "body": "κάνω εικασίες"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "infer",
+            "lang": "en"
+        },
+        {
+            "sp": "speculate",
+            "lang": "en"
+        },
+        {
+            "sp": "υποθέτω",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "shunt",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "turn aside or out of the way"
+        },
+        {
+            "lang": "en",
+            "body": "get rid of"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "yeoman",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "royal guard"
+        },
+        {
+            "lang": "gr",
+            "body": "μέλος της βασιλικής φρουράς"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "gesticulate",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "express by gesturing"
+        },
+        {
+            "lang": "gr",
+            "body": "κάνω χειρονομίες"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "subjugate",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "dominate",
+            "lang": "en"
+        },
+        {
+            "sp": "control",
+            "lang": "en"
+        },
+        {
+            "sp": "υποβάλλω",
+            "lang": "gr"
+        },
+        {
+            "sp": "υποτάσσω",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "leeway",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "extra time space or resources within which to operate"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "allowance",
+            "lang": "en"
+        },
+        {
+            "sp": "margin",
+            "lang": "en"
+        },
+        {
+            "sp": "freedom",
+            "lang": "en"
+        },
+        {
+            "sp": "περιθώριο",
+            "lang": "gr"
+        },
+        {
+            "sp": "ελευθερία",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "ramification",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "related or derived subject or problem"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "branch",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "silt",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "gr",
+            "body": "λεπτόκοκκη άμμος ή υλικό που μεταφέρεται από τρεχούμενο νερό και εναποτίθεται ως ίζημα"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "ίζημα",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "accretion",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "προσαύξηση",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "trite",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "κοινότυπος",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "ruffle",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "εκνευρίζω",
+            "lang": "gr"
+        },
+        {
+            "sp": "σούφρα",
+            "lang": "gr"
+        },
+        {
+            "sp": "vex",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "underdog",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "gr",
+            "body": "θύμα κοινωνικής ή πολιτικής αδικίας"
+        },
+        {
+            "lang": "gr",
+            "body": "ο πιο αδύναμος σε ένα διαγωνισμό ή διένεξη"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "vernacular",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "native or indigenous of language"
+        },
+        {
+            "lang": "en",
+            "body": "using plain, everyday language"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "rampant",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "violent in spirit"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "raging",
+            "lang": "en"
+        },
+        {
+            "sp": "prevailing",
+            "lang": "en"
+        },
+        {
+            "sp": "unchecked",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "extrapolate",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "infer"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "infer",
+            "lang": "en"
+        },
+        {
+            "sp": "conjecture",
+            "lang": "en"
+        },
+        {
+            "sp": "συνάγω",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "juxtaposition",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "state of being close together or side by side"
+        },
+        {
+            "lang": "gr",
+            "body": "τοποθετώ δίπλα-δίπλα προς σύγκριση"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "runt",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "smallest or weakest of a litter of pigs or cows"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "contemptible",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "proverbial",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "pertaining to proverbs"
+        },
+        {
+            "lang": "en",
+            "body": "object of common mention or reference"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "παροιμιώδης",
+            "lang": "gr"
+        },
+        {
+            "sp": "πασίγνωστος",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "foolproof",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "infallible"
+        },
+        {
+            "lang": "gr",
+            "body": "αλάνθαστος"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "infallible",
+            "lang": "en"
+        },
+        {
+            "sp": "αλάνθαστος",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "poignant",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "keenly distressing to the feelings"
+        },
+        {
+            "lang": "en",
+            "body": "pungent smell"
+        },
+        {
+            "lang": "en",
+            "body": "affecting or moving the emotions"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "οδυνηρός",
+            "lang": "gr"
+        },
+        {
+            "sp": "σπαρακτικός",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "gregarious",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "sociable",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "interim",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "intermediate",
+            "lang": "en"
+        },
+        {
+            "sp": "ενδιάμεσος",
+            "lang": "gr"
+        },
+        {
+            "sp": "προσωρινός",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "rebuff",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "repel"
+        },
+        {
+            "lang": "en",
+            "body": "check"
+        },
+        {
+            "lang": "en",
+            "body": "refuse"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "repel",
+            "lang": "en"
+        },
+        {
+            "sp": "check",
+            "lang": "en"
+        },
+        {
+            "sp": "refuse",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "stagnant",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "στάσιμος",
+            "lang": "gr"
+        },
+        {
+            "sp": "λιμνάζων",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "transmogrification",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "change or be changed completely"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "metamorphosis",
+            "lang": "en"
+        },
+        {
+            "sp": "μεταμόρφωση",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "quirk",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "peculiarity of action, behavior or personality"
+        },
+        {
+            "lang": "en",
+            "body": "sudden twist or turn"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "eccentricity",
+            "lang": "en"
+        },
+        {
+            "sp": "evasion",
+            "lang": "en"
+        }
+    ]
+}
+]

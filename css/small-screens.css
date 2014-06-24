@@ -1,0 +1,83 @@
+body {
+    height: 900px;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-image:  
+    radial-gradient(ellipse closest-side, rgba(255,255,255,.9) 0%, rgba(255,255,255,.6) 50%, rgba(255,255,255,0) 100%),
+    url('../img/letters-bg-small.jpg');
+    background-size: cover, 100% auto;
+    background-position: 0 0, 50% 50%;
+    background-repeat: no-repeat;
+    padding: 1.5em 0 0.5em;
+}
+
+body header h1 {
+    font-size: 1.6em;	
+    margin: 0 0.5em;
+    text-align: center;
+}
+
+header h2 { 
+    font-size: 1.2em;
+    margin: 1em .5em;
+}
+
+main {
+    max-width: 400px;
+    width: auto;
+    padding: .5em 1em;
+}
+main p {
+    margin: .5em 0;
+}
+
+/* OPERATIONS */
+#wordOperations {height: auto;}
+#wordOperations > li {
+	display: block;	
+}
+#wordOperations > li:not(:last-child) > a {margin-right: 0;}
+#wordOperations > li > a:hover { height: auto; }
+#wordOperations > li > a { 
+	margin-bottom: .5em; width: auto;
+}
+
+#wordDisplay h1, .wordDisplay h2 {
+    margin: 0 0 .5em;
+}
+#wordFilters {
+    margin: 0;
+}
+
+#customFilter {
+    width: auto;
+    min-width: 273px;
+    padding: .2em .4em 3em;
+}
+#customFilter label {
+    font: .9em Tahoma;    
+    margin-bottom: 1em;    
+    vertical-align: middle;
+}
+#customFilter input[type=text] {    
+    height: 1.3em;
+    margin: .2em 0 .1em .4em;
+    border: 1px inset rgb(125,133,139);
+    font: 1em Caudex;
+    text-indent: .5em;    
+    left: 4.5em;
+    border-radius: 4px 0 0 4px;
+}
+#customFilter button {
+    border-radius: 0 7px 6px 0;
+    height: 1.6em;
+    width: 2.6em;
+    color: rgb(225, 233, 239);    
+    text-shadow: 1px 1px 2px rgba(95, 97, 95, 1);
+    font-size: 1em;
+}
+
+ul {padding: 0;}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>My Custom Dictionary</title>
+        <link rel="stylesheet" href="css/normalize.css" >
+        <link rel="stylesheet" href="css/styles.css" >
+        <link rel="stylesheet" href="css/big-screens.css" media="(min-width:801px)">
+        <link rel="stylesheet" href="css/medium-screens.css" media="(min-width:401px) and (max-width:800px)">
+        <link rel="stylesheet" href="css/small-screens.css" media="(max-width: 400px)">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" >
+    </head>
+    <body>
+        <header>
+            <h1>My custom dictionary</h1>
+            <h2>An implementation using jQuery 2.1.0</h2>
+        </header>
+        <main>
+            <section id="wordDisplay">
+                <h1>List of words</h1>
+                <p>
+                Here follows a list of interesting words that is loaded via an AJAX call from a JSON file on the server.
+                Click on a word from the list and you will get a comprehensive display of the attached information.</p>
+                <p>You can also select a subset of the available words by either clicking on one of the filters or typing into the custom filter a desired combination of characters to search for.</p>
+                <div id="words">
+                    <h2>Operations</h2>
+                    <ul id="wordOperations">
+                        <li><a href="#" id="newWord">New Word</a></li>
+                        <li><a href="#" id="delWord">Delete Word</a></li>
+                        <li><a href="#" id="updWord">Update Word</a></li>
+                    </ul>
+                    <h2>Filters</h2>
+                    <ul id="wordFilters">
+                        <li id="customFilter">
+                            <label for="searchToken" title="Initiates a server-side search for the words that satisfy the shown criteria">Search for a word that...</label>
+                            <select id="searchFilter">
+                                <option selected value="contains">contains</option>
+                                <option value="equals">is spelled exactly as</option>
+                                <option value="starts">starts with</option>
+                                <option value="ends">ends with</option>
+                            </select>
+                            <input type="text" id="searchToken" value="" maxLength="15" title="Enter the string you want to search and hit the Go button or the Enter|Return key." />
+                            <button>Go</button>
+                        </li>
+                        <li><a href="#" id="allFilter" title="All available words">All</a></li>
+                    </ul>
+                    <h2>Words</h2>
+                    <p id="resultsMsg">Nothing loaded yet.</p>
+                    <ul id="wordList"></ul>
+                </div>
+            </section>
+        </main>
+    <footer><p>Athanasios Kontis 2014</p></footer>
+    <!-- The following sections are hidden and fade in and out as needed based on user actions -->
+    <div id="wordView" class="hidden" title="Click me to dismiss me!">
+        <dl>
+            <dt id="wordView-basicInfo">
+                <span id="wordView-basicInfo-sp"></span>
+                <span id="wordView-basicInfo-lang"></span>
+            </dt>
+            <dd id="wordView-extraInfo">
+                <div id="wordView-extraInfo-defs">
+                    <h3>Definitions</h3>
+                    <ol><!--rendered definitions are attached dynamically here--></ol>
+                </div>
+                <div id="wordView-extraInfo-syns">
+                    <h3>Synonyms</h3>
+                    <ol><!--rendered synonyms are attached dynamically here--></ol>
+                </div>
+            </dd>
+        </dl>
+    </div>
+
+    <div id="wordEdit" class="hidden" title="Use me to create or modify word entries!">
+        <form method="post">
+            <h3>Word Editor</h3>
+            <div id="wordEdit-basicInfo">
+                <h4>Basic Info</h4>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="wordEdit-extraInfo">
+                <h4>Definitions</h4>
+                <ol id="wordEdit-extraInfo-defs">
+                    <!-- attach dynamically ".extraInfo-defs.template" templates when clicking the button below -->
+                </ol>
+                <button class="adderBtn">Add a new definition</button>
+                <h4>Synonyms</h4>
+                <ol id="wordEdit-extraInfo-syns">
+                    <!-- attach dynamically ".extraInfo-syns.template" templates when clicking the button below -->
+                </ol>
+                <button class="adderBtn">Add a new synonym</button>
+            </div>
+            <hr/>
+            <div id="wordEdit-mod-buttons">
+                <input id="wordEdit-form-resetter" type="reset" value="Reset">
+                <input id="wordEdit-form-submitter" type="submit" value="Submit">
+                <button id="wordEdit-discarder">Discard</button>
+            </div>
+        </form>
+    </div>
+    <!-- The following HTML sections represent entities that may be added dynamically more than 1 times.
+        In order to avoid code duplication we use the jQuery clone method. These particular sections are never meant
+        to be displayed directly, but used only as scaffolding for cloning. -->
+    <div id="templates" class="hidden">
+        <input class="wordEdit-sp" type="text" required pattern="^\w+(-|\w+)*$" maxlength="30" size="15">
+        <select class="wordEdit-lang">
+            <option value="en">english</option>
+            <option value="de">german</option>
+            <option value="gr">greek</option>
+            <option value="ru">russian</option>
+            <option value="sv">svenska</option>
+        </select>
+        <!--buttons-->
+        <button class="wordEdit-unit-adder" title="">Add a new listing</button>
+        <button class="wordEdit-unit-remover" title="click me to remove current list item">X</button>
+        <button class="wordEdit-unit-accepter">&#x2713;</button><!-- Accept (tick) button)-->
+        <!--definition body-->
+        <textarea class="extraInfo-defs-body" rows="2" required maxlength="50"></textarea>
+    </div><!--End of templates-->
+    <!--Script section Start -->
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/word.js"></script>
+        <script src="js/dic.js"></script>
+    <!-- Script section End -->
+    </body>
+</html>

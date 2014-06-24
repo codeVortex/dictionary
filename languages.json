@@ -1,0 +1,37 @@
+[
+    { 
+        "international": "greek",
+        "iso": "el",
+        "native": "ελληνικά"
+    },
+    
+    {
+        "international": "english",
+        "iso": "en",
+        "native": "english"
+    },
+    
+    { 
+        "international": "swedish",
+        "iso": "sv",
+        "native": "svenska"
+    },
+    
+    { 
+        "international": "russian",
+        "iso": "ru",
+        "native": "русский"
+    },
+    
+    { 
+        "international": "german",
+        "iso": "de",
+        "native": "Deutsch"
+    },
+    
+    { 
+        "international": "french",
+        "iso": "fr",
+        "native": "français"
+    }
+]

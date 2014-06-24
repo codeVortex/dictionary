@@ -1,0 +1,55 @@
+body {
+    background-image: url("../img/letters-bg-big.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    max-width:  800px;
+    padding: .5em 1em;
+}
+
+header {
+    background-image: 
+    url("../img/Open-Book.png"), 
+    radial-gradient(ellipse farthest-side at 68%, rgba(255,255,255, 1) 0%, rgba(255,255,255,.6) 40%, rgba(255,255,255,0) 100%);
+    background-position: 72% 44%;
+    background-repeat: no-repeat;
+    background-size: 13% auto, 100% auto;
+    height: 10em;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+header h1, header h2 {margin: 0;}
+header h1 {
+    font-size: 2em;
+    left: 0%; top: 10%;
+    width: 8em;
+    position: absolute;
+    width: 8em;
+    text-shadow: -12px 2px 6px rgba(67, 70, 70, 0.8);
+}
+
+header h2 {
+    font-size: 1.2em;
+    right: 4%;	top: 71%;
+    width: 18em;
+    position: absolute;
+    text-shadow: 0px 12px 5px rgba(67, 70, 70, 0.8);
+}
+
+main h1 {
+    margin: 0.4em 0 .3em 0;
+    font-size: 1.6em;
+}
+main h2 {margin: .3em 0; font-size: 1.4em;}
+
+#wordList {padding-bottom: 2em;}
+
+@media (max-width: 519px) {
+    #wordOperations { height : 7em;}
+    #wordOperations > li > a { margin-bottom : .5em;}
+} 

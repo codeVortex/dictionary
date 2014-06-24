@@ -1,0 +1,351 @@
+/* font-face declarations */
+@font-face {
+    font-family: "Caudex";	font-style: normal; font-weight: normal;
+    src: url('../font/Caudex-Regular.ttf');
+}
+@font-face {
+    font-family: "Caudex-Bold";	font-style: normal; font-weight: bold;
+    src: url('../font/Caudex-Bold.ttf');
+}
+@font-face {
+    font-family: "Caudex-Italic";	font-style: italic; font-weight: normal;
+    src: url('../font/Caudex-Italic.ttf');
+}
+@font-face {
+    font-family: "Caudex-BoldItalic";	font-style: italic; font-weight: bold;
+    src: url('../font/Caudex-BoldItalic.ttf');
+}
+
+/* Generic page styling */
+body {
+    margin: 0; padding: 0; font-size: 16px; font-family: Calibri, Tahoma;
+    background: rgb(230, 239, 208); color: rgb(39, 45, 34);
+}
+main {
+    background-color: rgba(255, 255, 255, 0.5);	
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-family: Caudex;
+}
+a {text-decoration: none;}
+ul {padding-left: 0;}
+
+::selection {
+    background: rgb(139, 255, 50);
+    color: rgb(38, 68, 14);
+}
+::-moz-selection {
+    background: rgb(139, 255, 50);
+    color: rgb(38, 68, 14);
+}
+
+/* Header styling */
+header h1, header h2 {
+    text-shadow: 4px 3px 7px rgba(67, 70, 70, 0.8);
+    color: rgb(25, 51, 23);
+    text-align: center;
+}
+
+/* Operations styling */
+#wordOperations {
+    display: block;
+    margin: 0;
+    height: 3em;	
+}
+#wordOperations > li {
+    display: inline-block;
+    list-style: none outside none;
+    position: relative;
+}
+#wordOperations > li > a {
+    display: block;
+    box-shadow: -1px 7px 9px rgba(26, 82, 47, 0.5);
+    border: 2px outset rgb(135, 152, 124);
+    border-radius: 6px;
+    font: 1.1em Caudex-Bold;
+    text-shadow: -2px 2px 3px;
+    text-align: center;
+    padding: 0.5em;
+    width: 7em;
+    transition: all 0.2s ease 0s;
+}
+#wordOperations li:not(:last-child) a {
+    margin-right: 1em;
+}
+#wordOperations li:first-child:hover a, #wordOperations li a.hovered {
+    border-radius: 36px;
+    height: 1.8em;
+    text-decoration: underline;
+    transition: all 0.25s ease 0s;
+    vertical-align: middle;
+}
+#wordOperations a:active {font-family: Caudex-BoldItalic;}
+
+#newWord {
+    background: linear-gradient(to bottom, rgba(68, 132, 69, 0.8) 0%, rgba(128, 224, 94, 0.8) 48%, rgba(68, 124, 38,.8) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: rgb(54, 124, 57);
+}
+#newWord:hover {
+    background: linear-gradient(to bottom, rgba(88, 152, 89, 0.8) 0%, rgba(148, 244, 114, 0.8) 48%, rgba(88, 144, 58,.8) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: rgb(54, 124, 57);
+}
+#delWord {
+    background: linear-gradient(to bottom, 
+        rgba(173,63,29, 0.8) 0%, 
+        rgba(204,122,97, 0.8) 48%, 
+        rgba(170,54,18,.8) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: rgb(166,35,57);
+}
+#delWord.active {
+    background: linear-gradient(to bottom, 
+        rgba(193,83,49, 0.8) 0%, 
+        rgba(224,142,117, 0.8) 48%, 
+        rgba(190,74,38,.8) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: rgb(186,55,77);
+}
+#updWord {
+    background: linear-gradient(to bottom, 
+        rgba(153,170,18, 0.8) 0%, 
+        rgba(228,244,102, 0.8) 48%, 
+        rgba(151,168,20,.8) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: rgb(104,81,76);
+}
+#updWord.active {
+    background: linear-gradient(to bottom, 
+        rgba(173,190,38, 0.8) 0%, 
+        rgba(248,264,122, 0.8) 48%, 
+        rgba(171,188,40,.8) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: rgb(124,101,96);
+}
+
+/* Filters styling */
+#wordFilters li {
+    display: inline-block;
+    background-color: rgba(214, 216, 255, 0.8);
+    border: 2px groove rgb(69, 92, 209);
+    border-radius: 16px / 11px;
+    height: 1.9em;
+    font: 1em Tahoma;
+    color: rgb(13, 19, 79);
+    margin: .2em .2em .2em 0;
+}
+#wordFilters > li > a {	
+    padding: 0.3em 0.6em 0;
+    vertical-align: middle;
+}
+#wordFilters > li:last-child {
+    margin-right: 0;
+}
+#wordFilters > li:hover {
+    background-color: rgb(119, 121, 175);	
+}
+    
+    /* custom filter styling */
+    #wordFilters > li:nth-child(-1n+2) {background-image:radial-gradient(ellipse farthest-corner at center, rgb(244, 229, 255), rgb(226, 209, 255));}
+    #customFilter  {
+        padding: 0 0 0 11px;
+        width: 523px;
+    }
+    #customFilter  label {
+        font-size: .8em;
+        margin-right: .1em;
+        vertical-align: middle;
+    }
+    #customFilter select {
+        margin: 0px 2px 0 2px;
+        padding: 2px;
+        vertical-align: middle;
+        font-size: .8em;
+        background-color: #E6D5FF;
+        border: 1px dashed rgb(180, 180, 209);
+    }
+    #customFilter input[type=text] {
+        margin-top: 1px;
+        border: 1px inset #7779AF;
+        vertical-align: middle;
+        width: auto;  /* check */
+    }
+    #customFilter input[type=text]:focus {
+        box-shadow: 0px 0px 6px 0px rgb(225, 233, 239) inset;
+    }
+    
+    #customFilter button {
+        background-color: rgb(161, 159, 189);
+        border: 1px outset rgb(161, 160, 190);
+        border-radius: 0 7px 6px 0;
+        padding: 0px 7px 2px 4px;
+        left: -6px;
+        position: relative;
+        color: rgb(225, 233, 239);
+        text-shadow: 1px 1px 2px rgba(95, 97, 95, 1);
+    }
+    #customFilter button:hover {
+        background-color: rgb(180, 180, 209);
+    }
+
+/* Styling WordList */
+#wordList {
+    min-height: 20em;	
+}
+#wordList > li {
+    font: 1.1em Caudex;
+    list-style: none outside none;
+    display: inline-block;	
+    background-color: rgba(220, 230, 220, 0.7);
+    border: 1px dotted rgb(130, 150, 170);    
+    height: 1em;
+    margin: 0 .8em .3em 0;
+    padding: .25em .4em 0.55em .4em;
+    position: relative;
+}
+#wordList > li:hover {
+    background-color: rgba(210, 220, 215, 0.8);
+    margin: 0 .1em .3em 0em;
+    padding-right: .2em;
+    border-radius: 3px;
+    cursor: move;
+}
+#wordList > li.selected {
+    background-color: rgba(240, 250, 240, 0.85);
+    border-radius: 5px;
+    font-family: Caudex-Bold;
+}
+
+/* styling the viewerTrigger area */
+#wordList li .viewerTrigger {
+    background-image: url('../img/mag_glass.png');
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: contain;
+    width: 0em; height: inherit;
+    display: inline-block;
+    margin-left: .2em;
+    cursor: pointer;
+}
+#wordList li:hover .viewerTrigger {
+    width: .9em;
+    
+}
+
+/* Styling the individual word display window */
+#wordView {
+    border: 1px outset rgba(60,68,64,.8);
+    border-radius: 11px;
+    box-shadow: -1px 6px 5px 2px rgba(41,45,46,0.45);
+    min-width: 11em;
+    max-width: 20em;
+    background:
+        linear-gradient(0deg,rgba(105, 140, 126,.6) 0%, rgba(210, 242, 228,.6) 45%, rgba(210, 242, 228,.6) 44%, rgba(105,140,123,.6) 100%), 
+        linear-gradient(110deg, rgba(62, 66, 71, 0.7) 0%, rgba(170, 180, 193, 0.9) 35%, rgba(62, 66, 71, 0.7) 44%, rgba(62, 66, 71, 0.6) 55%, rgba(0, 0, 0, 0) 85%);
+    padding: .5em;
+    font: 1em Caudex;
+    position: absolute;
+}
+#wordView dl { margin: 0; }
+#wordView h3 {
+    font-size: 1.1em;
+    margin: 0.4em 0 0.3em;
+    text-decoration: underline;
+}
+#wordView-basicInfo { margin-bottom: .6em; }
+#wordView-basicInfo-sp {
+    margin-left: .4em;
+    font: bold 1.3em Caudex-BoldItalic;
+}
+#wordView-basicInfo-lang {
+    font: bold 1.1em Caudex-Italic;
+    margin-left: 1em;
+}
+#wordView-basicInfo-lang:before {content:'(';}
+#wordView-basicInfo-lang:after  {content:')';}
+#wordView ol {
+    padding-left: 0;
+    margin: 0 0 0 1em;
+}
+#wordView-extraInfo {margin-left: .8em;}
+#wordView-extraInfo p {margin: 0 0 0 1em;}
+#wordView-extraInfo-syns ol li {display: inline;}
+#wordView-extraInfo-syns ol li:not(:last-child):after {content: ", ";}
+.lang {font: 1em Caudex-Italic}
+
+/* Styling the edit word display window*/
+#wordEdit {
+    padding: 1em;
+    max-width: 90%;
+    box-sizing: border-box;
+    background: white;
+    border: 1px outset rgba(60,68,64,.8);
+    border-radius: 11px;
+    box-shadow: -1px 6px 5px 2px rgba(41,45,46,0.45);
+}
+#wordEdit .removable div {
+    display: inline-block;
+    margin-right: .8em;
+    vertical-align: top;
+}
+#wordEdit .removable div label {
+    display: block;
+    font-size: 0.7em;
+}
+#wordEdit .removable textarea {height: 2em;}
+#wordEdit ol {
+    padding-left: 1.3em;
+}
+#wordEdit ol li {margin-bottom: 1em;}
+#wordEdit h3 {
+    font: 1.3em Caudex-Bold;
+    margin: .3em 0 .2em 0;
+}
+#wordEdit h4 {
+    font: bold 1em Tahoma;
+    margin: .5em 0 .2em 0;
+}
+
+/* Styling the dialog class */
+.dialog {
+    background: none repeat scroll 0 0 rgb(255, 255, 255);
+    border: 3px double rgb(80, 90, 100);
+    border-radius: 6px;
+    left: calc(50% - 5em);
+    min-height: 2em;
+    padding: 0.5em;
+    position: fixed;
+    top: 50%;
+    width: 10em;
+    text-align: center;
+}
+.dialog h4 {
+    font-size: 1.1em;
+    margin: 0;
+    text-decoration: underline;
+}
+.dialog p {
+    margin: .5em 0;
+}
+
+footer {
+    position: fixed;
+    height: 2.5em;
+    bottom: 0;
+    display: block;
+    background-image: linear-gradient(to top, rgba(151, 226, 208, 0.75) 22%, rgba(0, 0, 0, 0) 100%);
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+}
+footer p {
+    margin: 1.1em auto;
+    width: auto;
+    font: .9em bold Helvetica, sans-serif;
+    font-family: Caudex;
+    color: rgb(50,80,90);
+    text-shadow: 0px 5px 10px rgba(255, 255, 255, 1);
+}
+
+#templates {
+    display: none;
+}
+
+.hidden { display: none; }
