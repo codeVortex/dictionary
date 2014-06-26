@@ -13,7 +13,7 @@ class Update extends Operation
     }
 
     function execute()
-    {        
+    {
         try {
             $this->dic->update($this->updatedWord);
             $this->response = new Response(true, "Word updated successfully!");

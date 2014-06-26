@@ -27,21 +27,23 @@
                     <h2>Operations</h2>
                     <ul id="wordOperations">
                         <li><a href="#" id="newWord">New Word</a></li>
-                        <li><a href="#" id="delWord">Delete Word</a></li>
                         <li><a href="#" id="updWord">Update Word</a></li>
+                        <li><a href="#" id="delWord">Delete Word</a></li>
                     </ul>
                     <h2>Filters</h2>
                     <ul id="wordFilters">
                         <li id="customFilter">
-                            <label for="searchToken" title="Initiates a server-side search for the words that satisfy the shown criteria">Search for a word that...</label>
+                            <label for="searchToken" title="Initiates a server-side search for the words that satisfy the shown criteria">Search for a word that...</label><wbr/>
                             <select id="searchFilter">
                                 <option selected value="contains">contains</option>
                                 <option value="equals">is spelled exactly as</option>
                                 <option value="starts">starts with</option>
                                 <option value="ends">ends with</option>
                             </select>
+                            <div>
                             <input type="text" id="searchToken" value="" maxLength="15" title="Enter the string you want to search and hit the Go button or the Enter|Return key." />
                             <button>Go</button>
+                            </div>
                         </li>
                         <li><a href="#" id="allFilter" title="All available words">All</a></li>
                     </ul>
@@ -85,35 +87,36 @@
                 <ol id="wordEdit-extraInfo-defs">
                     <!-- attach dynamically ".extraInfo-defs.template" templates when clicking the button below -->
                 </ol>
-                <button class="adderBtn">Add a new definition</button>
+                <button class="adderBtn" title="Click me to add a new definition list item">Add a new definition</button>
                 <h4>Synonyms</h4>
                 <ol id="wordEdit-extraInfo-syns">
                     <!-- attach dynamically ".extraInfo-syns.template" templates when clicking the button below -->
                 </ol>
-                <button class="adderBtn">Add a new synonym</button>
+                <button class="adderBtn" title="Click me to add a new synonym list item">Add a new synonym</button>
             </div>
             <hr/>
             <div id="wordEdit-mod-buttons">
-                <input id="wordEdit-form-resetter" type="reset" value="Reset">
-                <input id="wordEdit-form-submitter" type="submit" value="Submit">
-                <button id="wordEdit-discarder">Discard</button>
+                <button id="wordEdit-discarder" title="Click here (or press ESC) to dismiss the word editor">Discard</button>
+                <input id="wordEdit-form-resetter" type="reset" value="Reset" title="Click to reset the word editor form">
+                <input id="wordEdit-form-submitter" type="submit" value="Submit" title="Click to submit current word editor data">
             </div>
+            <input id="wordEdit-operation" type="hidden" value="insert" />
         </form>
     </div>
     <!-- The following HTML sections represent entities that may be added dynamically more than 1 times.
         In order to avoid code duplication we use the jQuery clone method. These particular sections are never meant
         to be displayed directly, but used only as scaffolding for cloning. -->
     <div id="templates" class="hidden">
-        <input class="wordEdit-sp" type="text" required pattern="^\w+(-|\w+)*$" maxlength="30" size="15">
+        <input class="wordEdit-sp" type="text" required pattern="^\S+(-|\S+)*$" maxlength="30" size="15" title="Enter the spelling of the word without spaces">
         <select class="wordEdit-lang">
-            <option value="en">english</option>
+            <option value="en" selected="selected">english</option>
             <option value="de">german</option>
             <option value="gr">greek</option>
             <option value="ru">russian</option>
             <option value="sv">svenska</option>
         </select>
         <!--buttons-->
-        <button class="wordEdit-unit-adder" title="">Add a new listing</button>
+        <button class="wordEdit-unit-adder">Add a new listing</button>
         <button class="wordEdit-unit-remover" title="click me to remove current list item">X</button>
         <button class="wordEdit-unit-accepter">&#x2713;</button><!-- Accept (tick) button)-->
         <!--definition body-->

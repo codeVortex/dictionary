@@ -46,3 +46,7 @@ header h2 {
 #wordEdit {
     min-width: 20em;
 }
+
+#wordEdit-mod-buttons button, #wordEdit-mod-buttons input {
+    margin: 0 5%;
+} 

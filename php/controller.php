@@ -43,7 +43,7 @@ switch ($operationType) {
         $target = (isGet('target')) ? get('target') : 'word';
         $operation = new Retrieval($dic, $target, $simplePattern);
         break;
-    case "insert":
+    case"insert":
         $newWord = Word::createFromJson(DataStore::getRawPostData());
         $operation = new Insertion($dic, $newWord);
         break;
