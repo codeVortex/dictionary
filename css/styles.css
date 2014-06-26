@@ -227,7 +227,6 @@ header h1, header h2 {
 }
 #wordList li:hover .viewerTrigger {
     width: .9em;
-    
 }
 
 /* Styling the individual word display window */
@@ -337,6 +336,40 @@ header h1, header h2 {
     min-width: 5em;
     max-width: 10em;
     display: inline-block;
+}
+
+.wordEdit-unit-remover {
+    background: radial-gradient(circle closest-corner at center center , #fafafa 0%, #d2d7d2 80%) no-repeat scroll 0% 0% transparent;
+    border-radius: 0.25em;
+    border: 1px solid #a1ab83;
+    box-sizing: border-box;
+    color: #a1ab83;
+    font: 1em sans-serif;
+    margin-top: 0.8em;
+    padding: 0.3em 0.8em;
+    transition: all 0.1s ease-out 0s;
+}
+
+.wordEdit-unit-remover:hover {
+    border-radius: 2em;
+    background: radial-gradient(circle closest-corner at center center , rgb(242, 244, 243) 0%, rgb(192, 209, 192) 80%) no-repeat scroll 0% 0% transparent;
+    color: #648291;
+    transition: all 0.1s ease-in 0s;
+}
+
+#wordEdit .wordEdit-lang {
+    //box-sizing: border-box;
+    font: .9em Helvetica;
+    padding: 0.3em 0.7em;
+    text-align: center;
+}
+#wordEdit .wordEdit-sp {
+    font: .9em Helvetica;
+    padding: .3em .7em;
+    text-align: left;
+    text-indent: .15em;
+    border-radius: .5em;
+    border: 1px solid #a1ab83;
 }
 
 /* Styling the dialog class */

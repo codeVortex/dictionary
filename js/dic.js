@@ -595,11 +595,11 @@ var viewers = (function () {
     .on('click', 'button', EventNamespace.clickHandlers.wordEdit)
     .find('#wordEdit-basicInfo > div').first().append(
         $('<label>').attr('for', 'wordEdit-basicInfo-sp').text('Spelling'),
-        $('#templates .wordEdit-sp').clone().attr('id', 'wordEdit-basicInfo-sp').removeClass('wordEdit-sp').addClass('resettable')
+        $('#templates .wordEdit-sp').clone().attr('id', 'wordEdit-basicInfo-sp').addClass('resettable')
     )
     .next().append(
         $('<label>').attr('for', 'wordEdit-basicInfo-lang').text('Language'),
-        $('#templates .wordEdit-lang').clone().attr('id', 'wordEdit-basicInfo-lang').removeClass('wordEdit-lang')
+        $('#templates .wordEdit-lang').clone().attr('id', 'wordEdit-basicInfo-lang')
     );
     
     // tackle #wordView
