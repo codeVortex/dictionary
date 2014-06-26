@@ -69,10 +69,11 @@ var dic = (function(words) {
         }
         return false;
     };
-    /** Public factory method to create Word objects from crude json data
-     * @param {object} extraInfo The word data arguments delivered in JSON format
+    /** Factory method that creates Word objects from a plain object literal
+     * @param {object} data The javascript object literal
      */
-    window.createWord = function(data) {
+    var createWord = function(data) {
+        if (typeof data !== 'object') {throw new Error('createWord(): arg must be an object');}
         var sp = data.sp;
         var lang = data.hasOwnProperty('lang') ? data.lang : null;
         var syns = data.hasOwnProperty('syns') ? data.syns : null;
@@ -92,10 +93,14 @@ var dic = (function(words) {
         var data = {}; // backing map-like data structure; PRIVATE member    
 
         // Public API
-        /** Adds a new word to the dictionary @param {Word} word The word object to be added */
+        /** Adds a new word to the dictionary @param {Word} word The word object (or object literal representation of a Word obj) to be added */
         this.addWord = function(word) {
-            if (!(word instanceof Word)) throw new Error("This function accepts only Word objects");
-            if (!this.containsWord(word)) {data[word.sp] = word;}
+            if (!(word instanceof Word)) {
+                word = createWord(word);
+            }
+            if (!this.containsWord(word)) {
+                data[word.sp] = word;
+            }
         };
         this.removeWord = function (word){  // accepts both strings or a Word objects as an argument
             var token = null;

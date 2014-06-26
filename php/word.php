@@ -156,7 +156,7 @@ class Word {
      * @param string|array $jsonData A string holding the Word data in JSON format, or an array holding the decoded json data
      * @return Word A newly created Word instance
      */	
-    static function createFromJson ($jsonData) {        
+    static function createFromJson ($jsonData) {
         $wordDataArr = (is_string($jsonData)) ? json_decode( $jsonData, true ) : $jsonData;
         $sp = array_key_exists('sp', $wordDataArr) ? $wordDataArr['sp'] : null;
         $lang = array_key_exists('lang', $wordDataArr) ? $wordDataArr['lang'] : 'en';

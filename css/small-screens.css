@@ -81,3 +81,7 @@ main p {
 }
 
 ul {padding: 0;}
+
+#wordEdit-mod-buttons button, #wordEdit-mod-buttons input {
+    margin: 0 .3em;
+}

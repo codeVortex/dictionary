@@ -17,38 +17,6 @@
     ]
 },
 {
-    "sp": "wont",
-    "lang": "en",
-    "defs": [
-        {
-            "lang": "en",
-            "body": "used to"
-        },
-        {
-            "lang": "en",
-            "body": "in the habit of"
-        }
-    ],
-    "syns": [
-        {
-            "sp": "practice",
-            "lang": "en"
-        },
-        {
-            "sp": "habit",
-            "lang": "en"
-        },
-        {
-            "sp": "συνήθεια",
-            "lang": "gr"
-        },
-        {
-            "sp": "likely",
-            "lang": "gr"
-        }
-    ]
-},
-{
     "sp": "ante",
     "lang": "en",
     "defs": [
@@ -69,39 +37,6 @@
     ]
 },
 {
-    "sp": "disconcerting",
-    "lang": "en",
-    "defs": [
-
-    ],
-    "syns": [
-        {
-            "sp": "disturbing",
-            "lang": "en"
-        },
-        {
-            "sp": "ανησυχητικός",
-            "lang": "gr"
-        }
-    ]
-},
-{
-    "sp": "forsworn",
-    "lang": "en",
-    "defs": [
-        {
-            "lang": "en",
-            "body": "violator of one's oath"
-        }
-    ],
-    "syns": [
-        {
-            "sp": "επίορκος",
-            "lang": "gr"
-        }
-    ]
-},
-{
     "sp": "perturb",
     "lang": "en",
     "defs": [
@@ -114,19 +49,6 @@
         {
             "sp": "unsettle",
             "lang": "en"
-        }
-    ]
-},
-{
-    "sp": "renegade",
-    "lang": "en",
-    "defs": [
-
-    ],
-    "syns": [
-        {
-            "sp": "αποστάτης",
-            "lang": "gr"
         }
     ]
 },
@@ -160,22 +82,6 @@
         },
         {
             "sp": "υπάγω",
-            "lang": "gr"
-        }
-    ]
-},
-{
-    "sp": "consignment",
-    "lang": "en",
-    "defs": [
-        {
-            "lang": "gr",
-            "body": "αποστολή αγαθών"
-        }
-    ],
-    "syns": [
-        {
-            "sp": "φορτωτική",
             "lang": "gr"
         }
     ]
@@ -858,6 +764,88 @@
         {
             "sp": "evasion",
             "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "pernicious",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "asdboof baby"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "asdd",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "precarious",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "wont",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "used to"
+        },
+        {
+            "lang": "en",
+            "body": "in the habit of"
+        },
+        {
+            "lang": "gr",
+            "body": "ο έχων τη συνήθεια"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "practice",
+            "lang": "en"
+        },
+        {
+            "sp": "habit",
+            "lang": "en"
+        },
+        {
+            "sp": "συνήθεια",
+            "lang": "gr"
+        },
+        {
+            "sp": "likely",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "forsworn",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "violator of one's oath"
+        },
+        {
+            "lang": "gr",
+            "body": "ο καταπατών τον όρκο του"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "επίορκος",
+            "lang": "gr"
         }
     ]
 }

@@ -47,6 +47,7 @@ var EventNamespace = (function(){
             event.preventDefault();  // prevent the jumping around caused by clicking to a # link
             event.stopPropagation();
             if (this.id === 'newWord') {
+                $('#wordEdit-operation').val('insert');
                 viewers.showWordEdit($('.selected').length === 1 ? $('.selected').text() : null);
             }
         },
@@ -126,7 +127,8 @@ var EventNamespace = (function(){
             event.stopPropagation();
             break;
         case 'updWord':
-            ajaxOperations.editWord(draggable);
+            $('#wordEdit-operation').val('update');
+            viewers.showWordEdit( draggable.text() );
             break;
         default:
             throw new Error('Unexpected droppable!');
@@ -138,17 +140,56 @@ var EventNamespace = (function(){
         }
     };
     that.submitHandlers = {
-        wordEdit: function () {
-            // TODO
-            $.post(
-                "php/controller.php?op=insert",
-                postData,
-                function (data) {
-                    viewers.dialog({
-                        title : data.success ? "Success" : "Failure",
-                        message : data.message
+        wordEdit: function (event) {
+            event.preventDefault();
+            var word = {}, 
+                promise = null, 
+                wordEdit = $('#wordEdit'),
+                operation = document.getElementById('wordEdit-operation').value;
+            // create json word object representation from the input fields
+            word.sp = wordEdit.find('#wordEdit-basicInfo-sp').val();
+            word.lang = wordEdit.find('#wordEdit-basicInfo-lang').val();
+            word.defs = [];
+            wordEdit.find('#wordEdit-extraInfo-defs li').each(
+                function() {
+                    word.defs.push({
+                        'body': $(this).find("textarea[id^='extraInfo-defs-body']").val(),
+                        'lang': $(this).find("select[id^='extraInfo-defs-lang']").val()
+                    });
+                }
+            );
+            word.syns = [];
+            wordEdit.find('#wordEdit-extraInfo-syns li').each(
+                function() {
+                    word.syns.push({
+                        'sp': $(this).find("input[id^='extraInfo-syns-sp']").val(),
+                        'lang': $(this).find("select[id^='extraInfo-syns-lang']").val()
+                    });
+                }
+            );
+            switch (operation) {
+                case 'insert': 
+                    promise = ajaxOperations.insertWord( JSON.stringify(word) );
+                    break;
+                case 'update':
+                    promise = ajaxOperations.updateWord( JSON.stringify(word) );
+                    break;
+                default: throw new Error('Unexpected selected operation');
+            }
+            promise.done( function (data) {
+                viewers.dialog({
+                    title : operation + (data.success ? " successful" : " failed"),
+                    message : data.message
                 });
             });
+            promise.fail( function (data) {
+                viewers.dialog({
+                    title: operation + (data.success ? " successful" : " failed"),
+                    message: data.message
+                });
+            });
+            viewers.resetWordEdit();
+            viewers.hideElement(wordEdit);
         }
     };
     return that;
@@ -215,7 +256,6 @@ var DomManipulations = (function () {
             /* Add draggable ability to word list elements (powered by JQuery UI) */
             var dragOptions = {
                 containment : "main",
-                cursor : "move",
                 helper : "original",
                 revert : true,
                 revertDuration : 150,
@@ -230,7 +270,7 @@ var DomManipulations = (function () {
                 response.data.forEach(
                     function (wordData) {
                         // create the Word objects and add them to current Dictionary
-                        dic.addWord(createWord(wordData));
+                        dic.addWord(wordData);
                         // create the li nodes and append them to wordList
                         $('<li>')
                         .text(wordData.sp)
@@ -319,12 +359,32 @@ var ajaxOperations = (function(){
         
         /**
          * Insert a new word entry into the Dictionary 
-         * @param {Word} the Word object to be inserted
+         * @param {object} insertable The stringified json representation of word data
          */
-        insertWord: function (insertable) {
-            if (!(insertable instanceof Word)) {
-                throw new Error("ajaxOperations.insertWord(): argument must be a Word instance")
-            }
+        insertWord: function ( insertable ) {
+            var deferred = 
+                $.ajax({
+                    url: "php/controller.php?op=insert",
+                    method: 'post',
+                    dataType: 'json',
+                    data: insertable
+                });
+            return deferred.promise();
+        },
+        
+        /**
+         * Updates an existing word on the backend Datastore
+         * @param {object} updateabe The stringified json representation of word data
+         */
+        updateWord: function ( updateable ) {
+            var deferred = 
+                $.ajax({
+                    url: "php/controller.php?op=update",
+                    method: 'post',
+                    dataType: 'json',
+                    data: updateable
+                });
+            return deferred.promise();
         }
     };
 }());
@@ -489,14 +549,21 @@ var viewers = (function () {
         ;
 
         if (wordObj !== null) {
+            // tackle basicInfo data (it must exist since wordObj is not null)
+            wordEdit
+                .find('#wordEdit-basicInfo-sp').val(wordObj.sp).end()
+                .find('#wordEdit-basicInfo-lang').val(wordObj.lang);
+            
+            // insert definition data (if exist)
             if (wordObj.defs && Array.isArray(wordObj.defs)) {
-                $.each(wordObj.defs, function ( defObj ) {
-                    createDefUnit( defObj );
+                wordObj.defs.forEach(function ( defObj ) {
+                    that.createDefUnit( defObj );
                 });
             }
+            // insert synonyms data (if exist)
             if (wordObj.syns && Array.isArray(wordObj.syns)) {
-                $.each(wordObj.defs, function ( synObj ) {
-                    createSynUnit( synObj );
+                wordObj.syns.forEach ( function ( synObj ) {
+                    that.createSynUnit( synObj );
                 });
             }
         }

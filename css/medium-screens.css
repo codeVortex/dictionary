@@ -52,4 +52,16 @@ main h2 {margin: .3em 0; font-size: 1.4em;}
 @media (max-width: 519px) {
     #wordOperations { height : 7em;}
     #wordOperations > li > a { margin-bottom : .5em;}
+}
+
+#wordEdit-mod-buttons button, #wordEdit-mod-buttons input {
+    margin: 0 5%;
 } 
+
+@media (max-width: 540px) {
+    #customFilter {
+        width: auto;
+        padding: 0.2em 0.4em 3em;
+    }
+    #customFilter div {margin-top: .3em;}
+}
