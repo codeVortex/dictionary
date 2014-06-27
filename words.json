@@ -1,5 +1,58 @@
 [
 {
+    "sp": "transpire",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "take place"
+        },
+        {
+            "lang": "en",
+            "body": "emit waste matter or vapor"
+        },
+        {
+            "lang": "en",
+            "body": "become known"
+        },
+        {
+            "lang": "en",
+            "body": "be revealed"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "occur",
+            "lang": "en"
+        },
+        {
+            "sp": "happen",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "teem",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "abound",
+            "lang": "en"
+        },
+        {
+            "sp": "swarm",
+            "lang": "en"
+        },
+        {
+            "sp": "σφίζω",
+            "lang": "gr"
+        }
+    ]
+},
+{
     "sp": "peruse",
     "lang": "en",
     "defs": [
@@ -14,6 +67,194 @@
     ],
     "syns": [
 
+    ]
+},
+{
+    "sp": "underhanded",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "short-handed"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "commune",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "small community"
+        },
+        {
+            "lang": "en",
+            "body": "communicate intimately with"
+        },
+        {
+            "lang": "en",
+            "body": "contemplate with deity or nature"
+        },
+        {
+            "lang": "gr",
+            "body": "επικοινωνώ με θεότητα ή φύση"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "κοινότητα",
+            "lang": "gr"
+        },
+        {
+            "sp": "converse",
+            "lang": "en"
+        },
+        {
+            "sp": "συνδιαλέγομαι",
+            "lang": "gr"
+        },
+        {
+            "sp": "διαλογίζομαι",
+            "lang": "gr"
+        },
+        {
+            "sp": "στοχάζομαι",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "sport",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "gr",
+            "body": "φοράω ή είμαι διακοσμημένος με κάτι"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "colloquial",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "informal language commonly employed in conversations"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "καθομιλουμένη",
+            "lang": "gr"
+        },
+        {
+            "sp": "κοινολεκτικός",
+            "lang": "gr"
+        },
+        {
+            "sp": "δημώδης",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "wholesome",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "conducive to moral or general well-being"
+        }
+    ],
+    "syns": [
+
+    ]
+},
+{
+    "sp": "conducive",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "contributive",
+            "lang": "en"
+        },
+        {
+            "sp": "συνεισφέρων",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "cut-clean",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "clearly outlined"
+        },
+        {
+            "lang": "en",
+            "body": "neat and wholesome"
+        },
+        {
+            "lang": "en",
+            "body": "clearly outlined"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "ξεκάθαρος",
+            "lang": "gr"
+        },
+        {
+            "sp": "αλάνθαστος",
+            "lang": "gr"
+        },
+        {
+            "sp": "unmistakable",
+            "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "wont",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "used to"
+        },
+        {
+            "lang": "en",
+            "body": "in the habit of"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "practice",
+            "lang": "en"
+        },
+        {
+            "sp": "habit",
+            "lang": "en"
+        },
+        {
+            "sp": "συνήθεια",
+            "lang": "gr"
+        },
+        {
+            "sp": "likely",
+            "lang": "gr"
+        }
     ]
 },
 {
@@ -37,6 +278,39 @@
     ]
 },
 {
+    "sp": "disconcerting",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "disturbing",
+            "lang": "en"
+        },
+        {
+            "sp": "ανησυχητικός",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "forsworn",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "violator of one's oath"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "επίορκος",
+            "lang": "gr"
+        }
+    ]
+},
+{
     "sp": "perturb",
     "lang": "en",
     "defs": [
@@ -49,6 +323,19 @@
         {
             "sp": "unsettle",
             "lang": "en"
+        }
+    ]
+},
+{
+    "sp": "renegade",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "αποστάτης",
+            "lang": "gr"
         }
     ]
 },
@@ -82,6 +369,22 @@
         },
         {
             "sp": "υπάγω",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "consignment",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "gr",
+            "body": "αποστολή αγαθών"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "φορτωτική",
             "lang": "gr"
         }
     ]
@@ -613,6 +916,27 @@
     ]
 },
 {
+    "sp": "pungent",
+    "lang": "en",
+    "defs": [
+
+    ],
+    "syns": [
+        {
+            "sp": "αψύς",
+            "lang": "gr"
+        },
+        {
+            "sp": "δριμύς",
+            "lang": "gr"
+        },
+        {
+            "sp": "έντονος",
+            "lang": "gr"
+        }
+    ]
+},
+{
     "sp": "poignant",
     "lang": "en",
     "defs": [
@@ -764,88 +1088,6 @@
         {
             "sp": "evasion",
             "lang": "en"
-        }
-    ]
-},
-{
-    "sp": "pernicious",
-    "lang": "en",
-    "defs": [
-        {
-            "lang": "en",
-            "body": "asdboof baby"
-        }
-    ],
-    "syns": [
-        {
-            "sp": "asdd",
-            "lang": "gr"
-        }
-    ]
-},
-{
-    "sp": "precarious",
-    "lang": "en",
-    "defs": [
-
-    ],
-    "syns": [
-
-    ]
-},
-{
-    "sp": "wont",
-    "lang": "en",
-    "defs": [
-        {
-            "lang": "en",
-            "body": "used to"
-        },
-        {
-            "lang": "en",
-            "body": "in the habit of"
-        },
-        {
-            "lang": "gr",
-            "body": "ο έχων τη συνήθεια"
-        }
-    ],
-    "syns": [
-        {
-            "sp": "practice",
-            "lang": "en"
-        },
-        {
-            "sp": "habit",
-            "lang": "en"
-        },
-        {
-            "sp": "συνήθεια",
-            "lang": "gr"
-        },
-        {
-            "sp": "likely",
-            "lang": "gr"
-        }
-    ]
-},
-{
-    "sp": "forsworn",
-    "lang": "en",
-    "defs": [
-        {
-            "lang": "en",
-            "body": "violator of one's oath"
-        },
-        {
-            "lang": "gr",
-            "body": "ο καταπατών τον όρκο του"
-        }
-    ],
-    "syns": [
-        {
-            "sp": "επίορκος",
-            "lang": "gr"
         }
     ]
 }
