@@ -209,19 +209,6 @@
     ]
 },
 {
-    "sp": "shakedown",
-    "lang": "en",
-    "defs": [
-        {
-            "lang": "en",
-            "body": "extortion as by blackmail or threats of violence"
-        }
-    ],
-    "syns": [
-
-    ]
-},
-{
     "sp": "sapient",
     "lang": "en",
     "defs": [
@@ -845,6 +832,26 @@
     "syns": [
         {
             "sp": "επίορκος",
+            "lang": "gr"
+        }
+    ]
+},
+{
+    "sp": "shakedown",
+    "lang": "en",
+    "defs": [
+        {
+            "lang": "en",
+            "body": "extortion as by blackmail or threats of violence"
+        }
+    ],
+    "syns": [
+        {
+            "sp": "blackmail",
+            "lang": "en"
+        },
+        {
+            "sp": "εκβιάζω",
             "lang": "gr"
         }
     ]

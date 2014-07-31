@@ -3,7 +3,6 @@ DictionaryApp = (function ($) {
     
     var dictionary = DictionaryApp.Model.Dictionary; // reference to initialized Dictionary module
    
-   
     var AjaxOperations = {
         /* Retrieves the currently registered, that is used in definitions, languages from the server */
         getLanguages: function () {
@@ -144,7 +143,7 @@ DictionaryApp = (function ($) {
                 event.stopPropagation();
                 if (this.id === 'newWord') {
                     $('#wordEdit-operation').val('insert');
-                    View.showWordEdit($('.selected').length === 1 ? $('.selected').text() : null);
+                    View.showWordEdit();
                 }
             },
             filters: function (event) {

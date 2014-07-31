@@ -1,6 +1,7 @@
 var DictionaryApp = DictionaryApp  || {};
 
 DictionaryApp.Utilities = (function() {
+    "use strict";
     return {
         // checks a variable s if it is of type string and does not match the empty regex (/^\s*$/ one or more spaces)
         isEmptyOrWhitespace: function (s) {
@@ -10,7 +11,9 @@ DictionaryApp.Utilities = (function() {
         // a cloning function for different types of built-in objects
         clone: function (obj) {
             // Handle the 3 simple types, and null or undefined
-            if (null === obj || "object" !== typeof obj) return obj;
+            if (null === obj || "object" !== typeof obj) {
+                return obj;
+            }
 
             // Handle Date
             if (obj instanceof Date) {
@@ -44,7 +47,7 @@ DictionaryApp.Utilities = (function() {
 
 // closure defining the dictionary namespace
 DictionaryApp.Model = (function(words) {
-    
+    "use strict";
     var model = DictionaryApp.Model || {};
     
     // callbacks
@@ -61,7 +64,7 @@ DictionaryApp.Model = (function(words) {
      * @param syns {array} Optional array of strings arg representing the collection of synonyms to this word. Default is an empty array.
      * @param defs {array} Optional array of strings arg representing the collection of definitions to this word. Default is an empty array.
      */
-    Word = function (spelling, lang, syns, defs) {        
+    function Word (spelling, lang, syns, defs) {        
         spelling = spelling || '';        
         if (isEmptyOrWhitespace(spelling)) throw new Error("Spelling argument must be a non-empty string");    
         // properties
